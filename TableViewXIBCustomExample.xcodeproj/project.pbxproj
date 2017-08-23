@@ -16,6 +16,8 @@
 		15B5CE551F4D65090050E8A2 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B5CE531F4D65090050E8A2 /* MyTableViewCell.xib */; };
 		15B5CE5B1F4D7E650050E8A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5CE591F4D7E650050E8A2 /* DetailViewController.swift */; };
 		15B5CE5C1F4D7E650050E8A2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B5CE5A1F4D7E650050E8A2 /* DetailViewController.xib */; };
+		15B5CE691F4D89590050E8A2 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5CE671F4D89590050E8A2 /* RightViewCell.swift */; };
+		15B5CE6A1F4D89590050E8A2 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B5CE681F4D89590050E8A2 /* RightViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		15B5CE531F4D65090050E8A2 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		15B5CE591F4D7E650050E8A2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		15B5CE5A1F4D7E650050E8A2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		15B5CE671F4D89590050E8A2 /* RightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewCell.swift; sourceTree = "<group>"; };
+		15B5CE681F4D89590050E8A2 /* RightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				15B5CE521F4D65090050E8A2 /* MyTableViewCell.swift */,
 				15B5CE531F4D65090050E8A2 /* MyTableViewCell.xib */,
+				15B5CE671F4D89590050E8A2 /* RightViewCell.swift */,
+				15B5CE681F4D89590050E8A2 /* RightViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				15B5CE5C1F4D7E650050E8A2 /* DetailViewController.xib in Resources */,
 				15B5CE461F4D61840050E8A2 /* Assets.xcassets in Resources */,
 				15B5CE441F4D61840050E8A2 /* Main.storyboard in Resources */,
+				15B5CE6A1F4D89590050E8A2 /* RightViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +177,7 @@
 				15B5CE3F1F4D61840050E8A2 /* AppDelegate.swift in Sources */,
 				15B5CE541F4D65090050E8A2 /* MyTableViewCell.swift in Sources */,
 				15B5CE5B1F4D7E650050E8A2 /* DetailViewController.swift in Sources */,
+				15B5CE691F4D89590050E8A2 /* RightViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +341,7 @@
 				15B5CE4F1F4D61840050E8A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

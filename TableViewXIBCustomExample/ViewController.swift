@@ -21,7 +21,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         let nibName = UINib(nibName: "MyTableViewCell", bundle: nil)
         myTableView.register(nibName, forCellReuseIdentifier: "myCell")
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let rightViewCell = UINib(nibName: "RightViewCell", bundle: nil)
+        myTableView.register(rightViewCell, forCellReuseIdentifier: "rightViewCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,9 +36,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath.item % 2 == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "rightViewCell", for: indexPath) as! RightViewCell
+            cell.fillData(imageUrl: "got_\(indexPath.item)", name: houseData[indexPath.item], slogan: wordsData[indexPath.item])
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableViewCell
         cell.fillData(imageUrl: "got_\(indexPath.item)", name: houseData[indexPath.item], slogan: wordsData[indexPath.item])
-        
         return cell
     }
     
